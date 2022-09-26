@@ -12,33 +12,65 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    border: 2px solid;
     }  
-    table, th, td {
-      border: 1px solid black;
-      border-collapse: collapse;
+    #table {
+      border-radius: 25px;
+      background: #383D64;
+      padding: 20px;
+      width: 200px;
+      height: 150px;
+      color: #FFFFFF;
+      width: 60%;
+      text-align: center;
+      font-weight: bold;
+    }
+    #table2 {
+      border-radius: 25px;
+      background: #EDBC65;
+      padding: 20px;
+      width: 140px;
+      height: 50px;
+      color: #FFFFFF;
+      text-align: center;
+      font-weight: bold;
     }
     table.education {
     margin-left: auto; 
     margin-right: auto;
     }
+    #mutedbluetext {
+    text-align: center;
+	color: #383D64;
+    font-family: Tahoma;
+    font-weight: bold;
+    }
+    #mutedyellowtext {
+    text-align: center;
+	color: #EDBC65;
+    font-family: Tahoma;
+    font-weight: bold;
+    }
     </style>
   </head>
   <body>
-      <h1 style="color:black"> Marco Luis M. Gonzalez </h1>
-      <p align="center" style="color:black">
-      <img src="https://avatars.githubusercontent.com/u/107260683?v=4" width="200" height="200" border="5px"/>
-      <br>
-      
-      xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
-      <br>Introduction
-      <br><br>Hello World! I'm Marco Luis M. Gonzalez. 
-      I'm in De La Salle University <a href="https://www.dlsu.edu.ph/">(link)</a> where I'm currently taking the course CCAPDEV.
-      <br><br>This is my html page containing my bio. I hope you like it!
-      
-      <br>xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
-      <br>Education<br>
+      <h1 id="mutedbluetext"> Marco Luis M. Gonzalez </h1>
+      <p align="center" style="color:#CA9AC5">
+        <img src="https://avatars.githubusercontent.com/u/107260683?v=4" width="200" height="200" border="5px"/>
+        <br>
       </p>
-      <table class="education">
+      <p id="mutedyellowtext">xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo</p>
+      <table id="table2" class="education"><tr><th>Introduction</th></tr></table>
+      <p id="mutedbluetext">
+        <br>Hello World! I'm Marco Luis M. Gonzalez. 
+        I'm in De La Salle University <a href="https://www.dlsu.edu.ph/">(link)</a> where I'm currently taking the course CCAPDEV.
+        <br><br>This is my html page containing my bio. I hope you like it!<br><br>
+      </p>
+
+      <p id="mutedyellowtext">xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo</p>
+      <table id="table2" class="education"><tr><th>Education</th></tr></table>
+      <br>
+      <table id="table" class="education">
         <tr>
           <th>Year/s</th>
           <th>School</th>
@@ -56,11 +88,14 @@
         </tr>
       </table>
       
-      <p align="center" style="color:black">
-      <br>xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo
-      <br>Links:<br>
-      <br>Facebook: <a href="https://www.facebook.com/marcoluis.gonzalez.5/">Marco Luis Gonzalez</a>
-      <br>Github: <a href="https://github.com/MarcoGonzalezDLSU">Marco Gonzalez DLSU</a>
+      <p id="mutedyellowtext"><br>xoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxoxo</p>
+      
+      <table id="table2" class="education"><tr><th>Links</th></tr></table>
+      
+      <p id="mutedbluetext">
+        <br>Facebook: <a href="https://www.facebook.com/marcoluis.gonzalez.5/">Marco Luis Gonzalez</a>
+        <br>Github: <a href="https://github.com/MarcoGonzalezDLSU">Marco Gonzalez DLSU</a>
+        <br><br>
       </p>
   </body>
 </html>
